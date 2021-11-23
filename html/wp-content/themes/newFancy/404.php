@@ -13,9 +13,20 @@ get_header();
 ?>
     <div id="Gcontainer" class="principal">
         <h1>RECURSO NO ENCONTRADO</h1>
-        <div id="container" align="center">
+        <div id="container" >
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/pagina404.png ">
             <br>
+        </div>
+        <div id="buscar">
+            <br>
+            <p>Porfavor busque otro recurso</p>
+            <?php
+            get_search_form(
+                array(
+                    'aria_label' => __( '404 not found', 'twentytwenty' ),
+                )
+            );
+            ?>
         </div>
     </div>
 <?php

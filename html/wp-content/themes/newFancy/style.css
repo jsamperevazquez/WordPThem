@@ -15,22 +15,37 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 body {
-    background: #f0ad4e;
+    background: linear-gradient(to bottom, #998d7a, #FFFFFF);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.principal {
+div.principal {
+    position: relative;
     text-align: center;
     color: azure;
 }
 
-.principal img {
+div.principal img {
     border-radius: 60px;
 }
 
-#pie {
+#buscar {
+    position: center;
+    color: #008a20;
+}
+#cabecera{
+    color: #0ca5de;
+    text-transform: uppercase;
     text-align: center;
-    color: whitesmoke;
+    position: center;
+}
+#cabecera img{
+    max-width: 50%;
+    height: auto;
+}
+#pie {
+    color: #4e342e;
+    text-align: center;
     size: A3;
 }
 

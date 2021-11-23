@@ -1,4 +1,8 @@
 <link rel="stylesheet" href="<?php echo get_stylesheet_uri();?>">
-<div id="cabecera"></div>
-<h1 style="text-align: center; color: #00e676;  text-transform: uppercase">Mi tema Funcy</h1>
+<div id="cabecera">
+    <h1 >Mi tema</h1>
+    <br>
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Fancy.png ">
+</div>
+
 <?php
