@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <title>My fancy Theme</title>
-    <link rel="stylesheet" href="<?php echo get_stylesheet_uri();?>">
 
 </head>
 <body>
