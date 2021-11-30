@@ -28,24 +28,55 @@ div.principal {
 div.principal img {
     border-radius: 60px;
 }
+.cuerpo {
+    position: relative;
+}
+
+div.thumbnailImagen img {
+    position: absolute;
+    border-radius: 60px;
+    width: 200px;
+    height: 200px;
+    padding: 3px;
+    margin-bottom: 70px;
+
+}
+
+div.excerpt {
+    inline-size: 350px;
+    overflow-wrap: break-word;
+    display: inline-block;
+    position: absolute;
+    left: 15%;
+
+}
 
 #buscar {
     position: center;
     color: #008a20;
 }
-#cabecera{
+
+#cabecera {
     color: #0ca5de;
     text-transform: uppercase;
     text-align: center;
     position: center;
 }
-#cabecera img{
+
+#cabecera img {
     max-width: 50%;
     height: auto;
 }
+
 #pie {
     color: #4e342e;
     text-align: center;
     size: A3;
 }
 
+#buscar {
+    position: center;
+}
+#last {
+    margin-top: 100px;
+}

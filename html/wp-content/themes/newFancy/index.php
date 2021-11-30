@@ -6,16 +6,34 @@
 
 </head>
 <body>
-<div id="cuerpo">
-    <!-- Incluyo el header en mi index para tenerlo aparte-->
-    <?php get_header()?>
-
+<div id="cuerpo" class="cuerpo">
     <?php
+    get_header();
+    if (have_posts()) :
+        while (have_posts()) :
+            ?>
+            <div class="post">
+                <?php
+                the_post(); ?>
+                <div class="thumbnailImagen" style="margin-bottom: 150px"><p><?php the_post_thumbnail(); ?></div></p>
+                <div class="excerpt" style="margin-bottom: 60px"><br>
+                    <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+                    <?php the_excerpt(); ?>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+        <?php
 
-    echo "<h1 style='text-align: center ; color: #0ca5de ; font-size: xxx-large '>Hola Fancy</h1>"
+        endwhile;
+    endif;
+    get_footer();
     ?>
 
+
 </div>
-<?php get_footer();?>
+</div>
 </body>
 </html>
